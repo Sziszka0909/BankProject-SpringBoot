@@ -41,6 +41,7 @@ public class Application {
 	
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String login(@RequestParam("username") String username, @RequestParam("password") String password, HttpSession session){
+		
 		String result;
 		try {
 			result = userDBDao.getUser(username, password);
