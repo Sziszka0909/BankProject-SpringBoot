@@ -1,0 +1,65 @@
+.fullscreen_bg {
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('backgroundPicture.jpg');
+    background-repeat:repeat;
+}
+
+.container {
+	margin-top: 100px;
+}
+
+#hiddenfield {
+	margin-top : 10px;
+	margin-bottom: -7px;
+	visibility: hidden;
+	text-align: center;
+	color: #FF0000;
+}
+
+.logout {
+	float: right;
+}
+
+.bankaccount {
+	margin-left: 10px;
+}
+
+.maindiv {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.historytable {
+	margin-top: 10px;
+}
+
+.borderless td, .borderless th {
+    border: none !important;
+}
+
+.message {
+	margin-right: 10px;
+}
+
+.reginput {
+	width: 150px !important;
+}
+
+.currency {
+	width: 100px !important;
+}
+
+.lastColumn {
+	width: 50px; 
+}
+
+.welcome {
+	color: white;
+	margin-top: 15px;
+  

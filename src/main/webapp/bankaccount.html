@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MainPage</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="bankaccount.js"></script>
+<script src="logout.js"></script>
+<script src="welcome.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+crossorigin="anonymous"></script>
+</head>
+<!--Create a menu and log out button-->
+<!--Show bank account details in a table-->
+<body>
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<ul class="nav navbar-nav">
+    			<li class="welcome">Hello <li>
+      			<li class="active bankaccount"><a href="bankaccount.html">Bank accounts</a></li>
+      			<li><a href="transaction.html">Transaction</a></li>
+      			<li><a href="accounthistory.html">Account history</a></li>
+    		</ul>
+    		<button class="btn btn-danger navbar-btn logout">Log out</button>
+  		</div>
+	</nav>
+	<div class="maindiv">
+	<h1>Your bank accounts:</h1>
+		<div class="message">
+			<table class="details table table-striped">
+				<tr>
+					<th>Bank account number</th>
+					<th>Currency</th>
+					<th>Balance</th>
+					<th></th>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<div class="newaccount">
+			<h5>If you want more bank accounts select your account currency and click the generate account button.</h5>
+			Select your account currency:
+			<select class="form-control reginput currency">
+				<option selected="selected">HUF</option>
+				<option>USD</option>
+				<option>EUR</option>
+			</select>
+			<button class="btn btn-info navbar-btn generate-button">Generate account</button>
+		</div>
+	</div>
+</body>
+</html>
